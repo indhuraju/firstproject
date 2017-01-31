@@ -1,0 +1,49 @@
+<!-- <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                 <td><input ng-model="contact.movieID" /></td>
+                    <td><input ng-model="contact.movieName" /></td>
+                    <td><button ng-click="addMovie()" class="btn btn-primary">Add Movie</button></td>
+                    <td><button ng-click="updateMovie()" class="btn btn-primary">Update</button></td>
+
+                </tr>
+                <tr ng-repeat=" contact in contactlist">
+                    <td>{{contact.movieName}}</td>
+                    <td><button ng-click="removeMovie(contact)" class="btn btn-danger">Remove</button></td>
+                    <td><button ng-click="editMovie(contact)" class="btn btn-primary">Edit</button></td>
+                </tr>
+            </tbody>
+ </table> -->
+
+
+
+
+<table class="table" style="margin-top: 10%;">
+            <thead>
+              <tr>
+                      <th>Movie Name</th>
+                      <th>Movie Theater</th>
+                  </tr>
+            </thead>
+            <tbody>
+              <tr>
+                      <td><input ng-model="contact.movieName" /></td>
+                      <td><input ng-model="contact.movieTheater" /></td>
+                      <td><button ng-click="addMovie()" class="btn btn-primary">Add Movie</button></td>
+                      <td><button ng-click="updateMovie()" class="btn btn-primary">Update</button></td>
+                      </tr>
+                <tr ng-repeat=" contact in contactlist">
+                    <td>{{contact.movieName}}</td>
+                      <td>{{contact.movieTheater}}</td>
+                    <td><button ng-click="removeMovie(contact)" class="btn btn-danger">Remove</button></td>
+                    <td><button ng-click="editMovie(contact)" class="btn btn-primary">Edit</button></td>
+                </tr>
+            </tbody>
+ </table>
